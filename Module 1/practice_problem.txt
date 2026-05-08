@@ -1,0 +1,16 @@
+1. Explain why we need long long int data type? 
+   long long int --> is used for big integer like, int can handle 10^9 size number but if the size 10^10 or more than int can't handle than we need long long int.
+
+
+2. Write all the rules for naming a variable in C programming.
+    ✅ Use only letters (a–z, A–Z), digits (0–9), and underscore (_)
+    ✅ Must start with a letter or underscore (_)
+    ❌ Cannot start with a digit
+    ❌ No spaces allowed
+    ❌ Cannot use C keywords (like int, if, return)
+    ⚠️ Case-sensitive (age ≠ Age)
+    ❌ No special symbols except _
+
+3. Write a C program that will take 2 numbers from the user and then print the 2nd number first and then first number.  
+
+    Answer in file practice.c
