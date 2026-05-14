@@ -13,24 +13,20 @@ int main()
         scanf("%d", &a[i]);
     }
 
-    int freq[n];
-    for (int i = 0; i < n; i++)
-    {
-        freq[i] = 0;
-    }
+    int left = 0;
+    int right = n - 1;
 
-    for (int i = 0; i < n; i++)
+    while (left <= right)
     {
-        for (int j = n - 1; j >= 0; j--)
+        printf("%d ", a[left]);
+
+        if (left != right)
         {
-            freq[i] = a[i];
-            freq[i + 1] = a[j];
+            printf("%d ", a[right]);
         }
-    }
 
-    for (int i = 0; i < n; i++)
-    {
-        printf("%d ", freq[i]);
+        left++;
+        right--;
     }
 
     return 0;
